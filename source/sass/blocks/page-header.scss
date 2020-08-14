@@ -1,0 +1,26 @@
+.page-header__logo {
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    margin-left: 15px;
+  }
+
+  @include mobile {
+    margin-left: 15px;
+  }
+}
+
+.page-header__img {
+  display: block;
+
+  @include tablet {
+    width: 44px;
+    height: 18px;
+  }
+
+  @include mobile {
+    width: 44px;
+    height: 18px;
+  }
+}

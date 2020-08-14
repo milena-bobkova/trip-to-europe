@@ -1,0 +1,151 @@
+.intro {
+  background: url("../img/main-back-desktop@1x.jpg") no-repeat;
+  background-position: center;
+  background-size: 100% 860px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/main-back-desktop@2x.jpg") no-repeat;
+    background-position: center;
+    background-size: 100% 860px;
+  }
+
+  @include tablet {
+    background: url("../img/main-back-tablet@1x.jpg") no-repeat;
+    background-size: 100% 344px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/main-back-tablet@2x.jpg") no-repeat;
+      background-size: 100% 344px;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    background: none;
+  }
+}
+
+.intro__wrapper {
+  padding-left: 58.5%;
+  padding-bottom: 295px;
+
+  @include tablet {
+    padding: 0;
+    padding-bottom: 83px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include mobile {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.intro__title {
+  @include reset;
+
+  margin-bottom: 30px;
+  padding-top: 185px;
+  padding-left: 58.5%;
+
+  width: 36%;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.11px;
+  color: $white;
+
+  @include tablet {
+    margin-bottom: 15px;
+    padding: 0;
+    padding-top: 60px;
+
+    width: 55%;
+
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: normal;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+    padding: 82px 0;
+    width: 100%;
+
+    background: url("../img/main-back-mobile@1x.jpg") no-repeat;
+    background-size: 100% 235px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/main-back-mobile@2x.jpg") no-repeat;
+      background-size: 100% 235px;
+    }
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: normal;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+
+      width: 70%;
+    }
+  }
+}
+
+.intro__text {
+  @include reset;
+
+  margin-bottom: 30px;
+
+  width: 30%;
+
+  color: $white;
+
+  @include tablet {
+    margin-bottom: 10px;
+
+    width: 55%;
+
+    text-align: center;
+    letter-spacing: -0.47px;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+
+    width: 100%;
+
+    text-align: center;
+    letter-spacing: -0.47px;
+    color: $blue;
+  }
+}
+
+.intro__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 23%;
+
+  @include mobile {
+    width: 72%;
+  }
+}

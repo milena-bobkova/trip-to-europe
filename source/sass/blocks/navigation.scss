@@ -1,0 +1,102 @@
+.navigation {
+  padding: 36px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablet {
+    padding: 0;
+
+    width: 100%;
+  }
+
+  @include mobile {
+    padding: 0;
+
+    width: 100%;
+  }
+}
+
+.navigation__toggle {
+  display: none;
+
+  @include tablet {
+    padding: 16px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8%;
+
+    background-color: $pink;
+    cursor: pointer;
+  }
+
+  @include mobile {
+    padding: 16px 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15%;
+
+    background-color: $pink;
+    cursor: pointer;
+  }
+}
+
+.navigation__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 42%;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.navigation__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 40%;
+}
+
+.navigation__link {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.navigation__tel {
+  width: 47%;
+}
+
+.navigation__tel-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  font-size: 18px;
+  color: $pink;
+  text-decoration: underline;
+}

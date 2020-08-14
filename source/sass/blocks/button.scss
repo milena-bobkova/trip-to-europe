@@ -1,0 +1,26 @@
+.button {
+  padding: 30px 35px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $pink;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+
+  @include tablet {
+    padding: 17px 40px;
+
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @include mobile {
+    padding: 17px 40px;
+  }
+}
