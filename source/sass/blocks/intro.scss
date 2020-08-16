@@ -1,21 +1,23 @@
 .intro {
   background: url("../img/main-back-desktop@1x.jpg") no-repeat;
-  background-position: center;
-  background-size: 100% 860px;
+  background-position: center center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/main-back-desktop@2x.jpg") no-repeat;
-    background-position: center;
-    background-size: 100% 860px;
+    background-position: center center;
+    background-size: cover;
   }
 
   @include tablet {
     background: url("../img/main-back-tablet@1x.jpg") no-repeat;
-    background-size: 100% 344px;
+    background-position: center center;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/main-back-tablet@2x.jpg") no-repeat;
-      background-size: 100% 344px;
+      background-position: center center;
+      background-size: cover;
     }
   }
 
@@ -31,7 +33,7 @@
 }
 
 .intro__wrapper {
-  padding-left: 58.5%;
+  padding-left: 60%;
   padding-bottom: 295px;
 
   @include tablet {
@@ -59,7 +61,7 @@
 
   margin-bottom: 30px;
   padding-top: 185px;
-  padding-left: 58.5%;
+  padding-left: 60%;
 
   font-weight: 600;
   font-size: 55px;
@@ -118,14 +120,14 @@
 
   margin-bottom: 30px;
 
-  width: 30%;
+  width: 356px;
 
   color: $white;
 
   @include tablet {
     margin-bottom: 10px;
 
-    width: 55%;
+    width: 398px;
 
     text-align: center;
     letter-spacing: -0.47px;
@@ -134,7 +136,7 @@
   @include mobile {
     margin-bottom: 15px;
 
-    width: 100%;
+    width: 290px;
 
     text-align: center;
     letter-spacing: -0.47px;
@@ -147,9 +149,9 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 23%;
+  width: 260px;
 
   @include mobile {
-    width: 72%;
+    width: 200px;
   }
 }

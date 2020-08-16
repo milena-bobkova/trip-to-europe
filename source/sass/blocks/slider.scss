@@ -1,13 +1,19 @@
 .slider {
-  margin: 0 20px;
   margin-bottom: 240px;
+  padding: 0 15px;
+
+  min-width: 1070px;
 
   @include tablet {
     margin-bottom: 110px;
+
+    min-width: 738px;
   }
 
   @include mobile {
     margin-bottom: 115px;
+
+    min-width: 290px;
   }
 }
 

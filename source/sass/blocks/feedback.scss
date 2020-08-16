@@ -1,17 +1,23 @@
 .feedback {
   margin: 0 30px;
+  margin-bottom: 165px;
 
   position: relative;
 
-  display: flex;
-  justify-content: center;
-
   @include tablet {
     margin: 0;
+    margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
   }
 
   @include mobile {
     margin: 0;
+    margin-bottom: 75px;
+
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -40,7 +46,7 @@
   width: 556px;
 
   background-color: $white;
-  box-shadow: 4px 30px rgba($blue, 0.1);
+  box-shadow: 0 4px 30px rgba($blue, 0.1);
 
   @include tablet {
     top: 70px;
