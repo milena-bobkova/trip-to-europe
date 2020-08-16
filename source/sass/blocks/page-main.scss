@@ -1,0 +1,108 @@
+.page-main {
+  padding-top: 200px;
+
+  background: url("img/europe-map-desktop@1x.jpg") no-repeat;
+  background-size: 100% 1089px;
+  background-position: center center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("img/europe-map-desktop@2x.jpg") no-repeat;
+    background-size: 100% 1089px;
+    background-position: center center;
+  }
+
+  @include tablet {
+    padding-top: 80px;
+
+    background: none;
+  }
+
+  @include mobile {
+    padding-top: 110px;
+
+    background: none;
+  }
+}
+
+.page-main__title {
+  @include reset;
+
+  margin-bottom: 65px;
+  position: relative;
+
+  width: 30%;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.25px;
+
+  &::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+
+    content: "";
+    width: 60%;
+    height: 4px;
+    background-color: $pink;
+  }
+
+  @include tablet {
+    margin-bottom: 20px;
+
+    width: 43%;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+
+    letter-spacing: normal;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: normal;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.page-main__text {
+  @include reset;
+
+  margin-bottom: 56px;
+
+  width: 30%;
+
+  color: rgba($blue, 0.7);
+
+  @include tablet {
+    margin-bottom: 40px;
+
+    width: 50%;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+}

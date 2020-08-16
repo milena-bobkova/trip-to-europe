@@ -1,0 +1,336 @@
+.prices {
+  margin-bottom: 135px;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    margin-bottom: 125px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prices__description {
+  padding-top: 120px;
+
+  order: 1;
+
+  width: 25%;
+
+  @include tablet {
+    margin-bottom: 30px;
+    padding-top: 0;
+    order: -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 95%;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+    padding-top: 0;
+    order: -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+}
+
+.prices__title {
+  margin-bottom: 50px;
+
+  width: 100%;
+
+  @include tablet {
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.prices__text {
+  width: 100%;
+
+  @include tablet {
+    margin-bottom: 40px;
+
+    line-height: 27px;
+  }
+
+  @include mobile {
+    width: 93%;
+
+    line-height: 27px;
+  }
+}
+
+.prices__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $dark;
+
+  span {
+    margin-bottom: 10px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.prices__link {
+  width: 100%;
+  color: $dark;
+}
+
+.prices__icon {
+  margin-right: 10px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.prices__rate-info {
+  margin-bottom: 35px;
+  padding-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27px;
+  color: rgba($dark, 0.7);
+
+  span {
+    font-weight: 600;
+  }
+
+  @include tablet {
+    margin: 0 20px 10px;
+    padding-top: 0;
+    flex-direction: column;
+
+    font-size: 24px;
+  }
+
+  @include mobile {
+    margin: 0 20px 10px;
+    padding-top: 0;
+    flex-direction: column;
+
+    font-size: 24px;
+  }
+}
+
+.prices__rate-text {
+  @include reset;
+
+  margin-bottom: 55px;
+  position: relative;
+
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+    content: "";
+
+    background-color: rgba($blue, 0.3);
+  }
+
+  @include tablet {
+    margin: 0 21px 20px;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin: 0 21px 30px;
+
+    text-align: center;
+  }
+}
+
+.prices__rate-title {
+  @include reset;
+
+  font-size: 28px;
+  line-height: 34px;
+
+  @include tablet {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+  }
+
+  @include mobile {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+  }
+}
+
+.prices__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-start;
+
+  width: 65%;
+
+  @include tablet {
+    align-items: stretch;
+
+    width: 100%;
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    width: 100%;
+  }
+}
+
+.prices__rate {
+  padding: 30px;
+  width: 310px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  border: 1px solid rgba($blue, 0.3);
+  border-radius: 6px;
+
+  &:hover {
+    border: 1px solid $pink;
+
+    .prices__rate-info {
+      color: $pink;
+    }
+  }
+
+  @include tablet {
+    padding: 30px 0 0;
+    width: 288px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+    padding: 30px 0 0;
+    width: 288px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.prices__rate-list {
+  @include list-reset;
+  padding-bottom: 35px;
+
+  @include tablet {
+    margin: 0 20px;
+    padding-bottom: 30px;
+  }
+
+  @include mobile {
+    margin: 0 20px;
+    padding-bottom: 0;
+  }
+}
+
+.prices__rate-item {
+  display: flex;
+
+  margin-bottom: 15px;
+  line-height: 32px;
+  color: $blue;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  svg {
+    margin-right: 20px;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @include tablet {
+    margin-bottom: 10px;
+
+    width: 95%;
+  }
+
+  @include mobile {
+    margin-bottom: 10px;
+
+    width: 95%;
+
+    line-height: 32px;
+  }
+}
+
+.prices__button {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    padding: 20px 70px;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+  }
+}

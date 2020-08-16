@@ -13,6 +13,17 @@
   text-transform: uppercase;
   color: $white;
 
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    background-color: rgba($orange, 0.8);
+  }
+
   @include tablet {
     padding: 17px 40px;
 
@@ -22,5 +33,8 @@
 
   @include mobile {
     padding: 17px 40px;
+
+    font-size: 10px;
+    line-height: 12px;
   }
 }

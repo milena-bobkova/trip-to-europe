@@ -61,25 +61,32 @@
   padding-top: 185px;
   padding-left: 58.5%;
 
-  width: 36%;
-
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.11px;
   color: $white;
 
+  span {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 80%;
+  }
+
   @include tablet {
     margin-bottom: 15px;
     padding: 0;
     padding-top: 60px;
 
-    width: 55%;
-
     text-align: center;
     font-size: 30px;
     line-height: 45px;
     letter-spacing: normal;
+
+    span {
+      width: 100%;
+    }
   }
 
   @include mobile {
@@ -101,9 +108,6 @@
     letter-spacing: normal;
 
     span {
-      display: inline-block;
-      vertical-align: top;
-
       width: 70%;
     }
   }

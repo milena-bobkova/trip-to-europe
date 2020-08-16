@@ -1,0 +1,157 @@
+.feedback {
+  margin: 0 30px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.feedback__img {
+  @include tablet {
+    width: 768px;
+    height: 456px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.feedback__info {
+  padding: 50px;
+
+  position: absolute;
+  top: 70px;
+  left: 514px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 556px;
+
+  background-color: $white;
+  box-shadow: 4px 30px rgba($blue, 0.1);
+
+  @include tablet {
+    top: 70px;
+    left: calc(50% - 330px);
+  }
+
+  @include mobile {
+    padding: 50px 16px;
+
+    position: initial;
+
+    width: 288px;
+  }
+}
+
+.feedback__title {
+  @include reset;
+
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $dark;
+  text-align: center;
+  letter-spacing: normal;
+
+  @include tablet {
+    margin-bottom: 10px;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    width: 95%;
+  }
+}
+
+.feedback__text {
+  margin-bottom: 25px;
+
+  width: 100%;
+  color: $dark;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: normal;
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    width: 95%;
+  }
+}
+
+.feedback__form {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 560px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    margin-bottom: 0;
+
+    width: 288px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.feedback__form-field {
+  padding: 14px;
+
+  width: 240px;
+
+  border: 1px solid rgba($blue, 0.3);
+  border-radius: 5px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+
+  input {
+    border: none;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.feedback__form-button {
+  padding: 18px 40px;
+
+  letter-spacing: 2px;
+
+  @include tablet {
+    padding: 18px 84px;
+  }
+
+  @include mobile {
+    padding: 18px 103px;
+  }
+}

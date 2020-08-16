@@ -1,0 +1,315 @@
+.slider {
+  margin: 0 20px;
+  margin-bottom: 240px;
+
+  @include tablet {
+    margin-bottom: 110px;
+  }
+
+  @include mobile {
+    margin-bottom: 115px;
+  }
+}
+
+.slider--nojs .slider__item:nth-child(1) {
+  display: flex;
+}
+
+.slider__controls {
+  margin-bottom: 90px;
+
+  position: relative;
+
+  display: flex;
+
+  &::after {
+    position: absolute;
+    top: 35px;
+    left: 0;
+
+    content: "";
+    width: 78%;
+    height: 2px;
+
+    background-color: rgba($blue, 0.3);
+  }
+
+  @include tablet {
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+
+    overflow: hidden;
+  }
+}
+
+.slider__toggle {
+  margin-right: 100px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  display: inline-block;
+  vertical-align: top;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: rgba($blue, 0.3);
+
+  &:hover {
+    color: rgba($pink, 0.5);
+  }
+
+  &--active {
+    color: rgba($pink, 1);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 50px;
+  }
+}
+
+.slider__list {
+  @include list-reset;
+
+  position: relative;
+}
+
+.slider__title {
+  margin-top: 10px;
+  margin-bottom: 55px;
+
+  width: 80%;
+
+  @include tablet {
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    width: 100%;
+  }
+}
+
+.slider__text {
+  margin-bottom: 50px;
+
+  width: 100%;
+
+  @include tablet {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.slider__item {
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.slider__item--show {
+  display: flex;
+}
+
+.slider__button {
+  width: 48%;
+
+  @include tablet {
+    width: 23%;
+  }
+
+  @include mobile {
+    padding: 20px 70px;
+  }
+}
+
+.slider__info-wrap {
+  margin-right: 100px;
+
+  width: 37%;
+
+  @include tablet {
+    margin-bottom: 30px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 50px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__review-wrap {
+  position: relative;
+
+  width: 70%;
+
+  @include tablet {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.slider__review {
+  padding: 30px;
+
+  position: absolute;
+  top: calc(50% - 190px);
+  left: 315px;
+  z-index: 1;
+
+  width: 322px;
+
+  background-color: $white;
+
+  @include tablet {
+    top: 80px;
+    left: calc(50% - 172px);
+  }
+
+  @include mobile {
+    padding: 20px;
+
+    top: 60px;
+    left: calc(50% - 134px);
+
+    width: 228px;
+  }
+}
+
+.slider__review-title {
+  @include reset;
+
+  margin-bottom: 40px;
+
+  position: relative;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  color: $blue;
+
+  &::after {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    content: "";
+    width: 20%;
+    height: 2px;
+
+    background-color: $pink;
+  }
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::after {
+      top: 40px;
+      left: 90px;
+    }
+  }
+}
+
+.slider__review-text {
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.41px;
+  color: rgba($blue, 0.7);
+
+  @include mobile {
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+}
+
+.slider__img {
+  display: block;
+
+  @include tablet {
+    width: 768px;
+    height: 415px;
+  }
+
+  @include mobile {
+    width: 319px;
+    height: 415px;
+  }
+}
+
+.slider__photo {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.slider__review-author {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 24px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
