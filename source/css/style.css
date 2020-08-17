@@ -380,12 +380,12 @@ a {
 
 .page-main {
   padding-top: 200px;
-  background: url("img/europe-map-desktop@1x.jpg") no-repeat;
+  background: url("../img/europe-map-desktop@1x.png") no-repeat;
   background-size: 100% 1089px;
   background-position: center center; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main {
-      background: url("img/europe-map-desktop@2x.jpg") no-repeat;
+      background: url("../img/europe-map-desktop@2x.png") no-repeat;
       background-size: 100% 1089px;
       background-position: center center; } }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -1437,6 +1437,9 @@ a {
         margin-bottom: 20px; } }
 
 .page-footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 14px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1473,11 +1476,6 @@ a {
       margin-bottom: 20px;
       text-align: center; } }
 
-.page-footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .page-footer__text {
   margin-right: 30px;
   font-size: 14px;
@@ -1506,5 +1504,8 @@ a {
 @media (min-width: 320px) and (max-width: 767px) {
   .page-footer__link-mail {
     display: none; } }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
