@@ -52,7 +52,8 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 1170px; }
+  min-width: 984px;
+  max-width: 1170px; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
       padding: 0 20px;
@@ -381,12 +382,12 @@ a {
 .page-main {
   padding-top: 200px;
   background: url("../img/europe-map-desktop@1x.png") no-repeat;
-  background-size: 100% 1089px;
+  background-size: cover;
   background-position: center center; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main {
       background: url("../img/europe-map-desktop@2x.png") no-repeat;
-      background-size: 100% 1089px;
+      background-size: cover;
       background-position: center center; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .page-main {

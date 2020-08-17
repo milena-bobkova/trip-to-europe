@@ -2,12 +2,12 @@
   padding-top: 200px;
 
   background: url("../img/europe-map-desktop@1x.png") no-repeat;
-  background-size: 100% 1089px;
+  background-size: cover;
   background-position: center center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/europe-map-desktop@2x.png") no-repeat;
-    background-size: 100% 1089px;
+    background-size: cover;
     background-position: center center;
   }
 
