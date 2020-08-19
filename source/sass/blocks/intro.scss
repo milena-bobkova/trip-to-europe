@@ -63,6 +63,8 @@
   padding-top: 185px;
   padding-left: 60%;
 
+  width: 412px;
+
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
@@ -80,6 +82,8 @@
     margin-bottom: 15px;
     padding: 0;
     padding-top: 60px;
+
+    width: 398px;
 
     text-align: center;
     font-size: 30px;
@@ -151,7 +155,15 @@
 
   width: 260px;
 
+  @include tablet {
+    width: 180px;
+  }
+
   @include mobile {
     width: 200px;
   }
+}
+
+.intro__icon {
+  fill: $pink;
 }

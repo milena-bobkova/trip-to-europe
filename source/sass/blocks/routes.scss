@@ -1,4 +1,4 @@
-.routes {
+.routes__wrapper {
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -12,10 +12,12 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   @include tablet {
     margin-right: 10px;
+
+    justify-content: center;
   }
 }
 
@@ -44,17 +46,16 @@
 }
 
 .routes__item {
-  margin-right: 60px;
   margin-bottom: 100px;
 
   position: relative;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:nth-last-child(2) {
+    margin-left: 15%;
   }
 
   &:last-child {
-    margin-right: 0;
+    margin-right: 15%;
   }
 
   &:hover::before {
@@ -86,14 +87,26 @@
     }
 
     &:last-child {
+      margin-right: 0;
       margin-top: 10px;
+    }
+
+    &:nth-last-child(2) {
+      margin-left: 0;
     }
   }
 
   @include mobile {
-    margin-top: 0;
-    margin-right: 0;
+    margin: 0;
     margin-bottom: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-left: 0;
+    }
   }
 }
 

@@ -1,0 +1,24 @@
+.modal {
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 364px);
+  z-index: 3;
+
+  width: 744px;
+
+  display: none;
+
+  &--show {
+    display: flex;
+  }
+
+  @include tablet {
+    top: 50px;
+    left: calc(50% - 374px);
+  }
+
+  @include mobile {
+    left: calc(50% - 160px);
+    width: 320px;
+  }
+}

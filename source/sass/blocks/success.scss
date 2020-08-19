@@ -1,0 +1,23 @@
+.success__message {
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 364px);
+
+  width: 728px;
+  height: 444px;
+
+  background-color: #f8f8f8;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 42px;
+
+  text-align: center;
+  color: #48494d;
+}
+
+.success__icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

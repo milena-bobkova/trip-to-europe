@@ -1,19 +1,26 @@
 .prices {
   margin-bottom: 135px;
+  position: relative;
 
+  @include tablet {
+    margin-bottom: 125px;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
+}
+
+.prices__wrap {
   display: flex;
   justify-content: space-between;
 
   @include tablet {
-    margin-bottom: 125px;
-
     flex-direction: column;
     align-items: center;
   }
 
   @include mobile {
-    margin-bottom: 50px;
-
     flex-direction: column;
     align-items: center;
   }
@@ -71,7 +78,7 @@
   width: 100%;
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     line-height: 27px;
   }
@@ -93,10 +100,6 @@
   line-height: 34px;
   color: $dark;
 
-  span {
-    margin-bottom: 10px;
-  }
-
   @include tablet {
     font-size: 18px;
     line-height: 32px;
@@ -109,12 +112,28 @@
 }
 
 .prices__link {
+  margin-top: 10px;
   width: 100%;
+
+  display: flex;
+  align-items: center;
+
   color: $dark;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    color: rgba($orange, 0.7);
+  }
 }
 
 .prices__icon {
   margin-right: 10px;
+
+  fill: $white;
 
   @include tablet {
     display: none;
@@ -229,6 +248,7 @@
 
   @include mobile {
     flex-direction: column;
+    align-items: center;
 
     width: 100%;
   }
@@ -236,6 +256,8 @@
 
 .prices__rate {
   padding: 30px;
+  padding-left: 4%;
+  padding-right: 4%;
   width: 310px;
 
   display: flex;
@@ -245,6 +267,7 @@
 
   border: 1px solid rgba($blue, 0.3);
   border-radius: 6px;
+  background-color: $white;
 
   &:hover {
     border: 1px solid $pink;
@@ -260,7 +283,7 @@
   }
 
   @include mobile {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 30px 0 0;
     width: 288px;
 
@@ -276,7 +299,7 @@
 
   @include tablet {
     margin: 0 20px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   @include mobile {
@@ -321,16 +344,73 @@
 }
 
 .prices__button {
-  width: 100%;
+  padding: 25px 7%;
+  width: 240px;
 
   display: flex;
   justify-content: center;
+  align-self: center;
 
   @include tablet {
-    padding: 20px 70px;
+    padding: 20px 8.5%;
   }
 
   @include mobile {
+    padding: 20px 8.5%;
     margin-top: 30px;
   }
 }
+
+.prices__modal {
+  display: flex;
+
+  background-color: #f8f8f8;
+}
+
+.prices__modal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.prices__modal-toggle {
+  margin: 20px;
+  align-self: flex-end;
+}
+
+.prices__modal-title {
+  @include reset;
+
+  margin: 0 75px 50px;
+  padding: 10px 20px;
+
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.prices__modal-field {
+  margin: 0 60px 20px;
+
+  input {
+    padding: 15px;
+
+    width: 240px;
+    border: 1px solid #d7d9df;
+    background-color: $white;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    &:invalid {
+      border: 1px solid $pink;
+    }
+  }
+}
+
+.prices__modal-button {
+  margin: 0 106px;
+  padding: 18px 40px;
+}
+
