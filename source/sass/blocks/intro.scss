@@ -1,21 +1,22 @@
 .intro {
-  background: url("../img/main-back-desktop@1x.jpg") no-repeat;
+  background-image: url("../img/main-back-desktop@1x.jpg");
   background-position: center center;
   background-size: cover;
+  background-color: $blue;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/main-back-desktop@2x.jpg") no-repeat;
+    background-image: url("../img/main-back-desktop@2x.jpg");
     background-position: center center;
     background-size: cover;
   }
 
   @include tablet {
-    background: url("../img/main-back-tablet@1x.jpg") no-repeat;
+    background-image: url("../img/main-back-tablet@1x.jpg");
     background-position: center center;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/main-back-tablet@2x.jpg") no-repeat;
+      background-image: url("../img/main-back-tablet@2x.jpg");
       background-position: center center;
       background-size: cover;
     }
